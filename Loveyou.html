@@ -32,6 +32,31 @@
 				});
 			});
 		</script>
+		
+		<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_T5G2lcscyHtiSZdQYGGlh");
+   })();
+   function thanhcong()
+   {
+		emailjs.send("gmail","thanh_cong",{
+		name: "James", 
+		notes: "Check this out! thanh cong roi"
+				});
+alert('yeah');
+				location.href = 'success.html'
+   }
+    function thatbai()
+   {
+		emailjs.send("gmail","that_bai",{
+		name: "James", 
+		notes: "Check this out! that bai roi"
+				});
+				alert(':((');
+location.href = 'fail.html'
+   }
+</script>
 </head>
 <body>
     <!-- header-section-starts -->
@@ -75,8 +100,8 @@
 										<P>
 										 <br/>
 										  <br/>
-				                       <input type="button" onclick="loveyou();" id="yes" value="ĐỒNG Ý"  > </input>  -
-									    <input type="button"   onclick="sad();" id="no" value="KHÔNG ĐỒNG Ý"  > </input>
+				                       <input type="button" onclick="thanhcong();" id="yes" value="ĐỒNG Ý"  > </input>  -
+									    <input type="button"   onclick="thatbai();" id="no" value="KHÔNG ĐỒNG Ý"  > </input>
 				                       <P>  									   
 				                       
 							 
