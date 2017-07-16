@@ -3,6 +3,7 @@
 <head>
 <title>LOVE YOU</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link rel="shortcut icon" href="icon/icon.ico" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
 <script src="js/modernizr.custom.js"></script>
@@ -41,17 +42,17 @@
    function thanhcong()
    {
 		emailjs.send("gmail","thanh_cong",{
-		name: "James", 
-		notes: "Check this out! thanh cong roi"
+		name: "Giang goi rep", 
+		notes: $('textarea#txtmess').val()
 				});
-alert('yeah');
+alert('oh yeah...');
 				location.href = 'Success.html'
    }
     function thatbai()
    {
 		emailjs.send("gmail","that_bai",{
 		name: "James", 
-		notes: "Check this out! that bai roi"
+		notes:$('textarea#txtmess').val()
 				});
 				alert(':((');
 location.href = 'Fail.html'
@@ -92,17 +93,29 @@ location.href = 'Fail.html'
 <div class="wedding-content page1">
 		<div class="wedding-top">
 		<div class="container" style="text-align:center">
-              		 		 <P style="font-size:25px;color:#4c7000">
-				                       ừm... YÊU ANH NHÉ?
-				                       <P>  
-				                          <img src="images/pic.png" width="200px"  alt=""/>
+              		 		 <p style="font-size:25px;color:#4c7000">
+				                       ừhm...học trò à, YÊU ANH NHÉ?
+				              </p>
+				              <p>
+  							  <img src="images/pic.png" width="200px"  alt=""/> </p>
 				                        
-										<P>
-										 <br/>
-										  <br/>
-				                       <input type="button" onclick="thanhcong();" id="yes" value="ĐỒNG Ý"  > </input>  -
-									    <input type="button"   onclick="thatbai();" id="no" value="KHÔNG ĐỒNG Ý"  > </input>
-				                       <P>  									   
+								
+										   </br>
+												<p style="font-size:15px;color:#4c7000"> Comment:</p>
+											 <p>
+										 
+										   
+				                           <textarea  name="txtmess" id="txtmess" rows="5" cols="30"></textarea>
+				                       </p> 
+									    <p>		 
+											 <br/>
+											  <br/>
+											 <input type="button" onclick="thanhcong();" id="yes" value="ĐỒNG Ý"  > </input>  -
+											 <input type="button"   onclick="thatbai();" id="no" value="KHÔNG ĐỒNG Ý"  > </input>
+											 <p> <audio controls autoplay>
+        <source src="assets/Suynghitronganh.mp3">
+    </audio> </p>
+				                        </p>
 				                       
 							 
   </div>  
