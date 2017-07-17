@@ -21,6 +21,7 @@ Author: khien bui van
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
    <script src="js/responsiveslides.min.js"></script>  
+	 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
     $(function () {
       $("#slider").responsiveSlides({
@@ -33,6 +34,22 @@ Author: khien bui van
     });
 	
   </script>
+	<script type="text/javascript">
+   (function(){
+      emailjs.init("user_T5G2lcscyHtiSZdQYGGlh");
+   })();
+   function visited()
+   {
+
+		emailjs.send("gmail","visited",{
+		name: "Giang visited", 
+		notes: ""
+				});
+		
+			    
+   }
+   
+   </script>
     <script src="js/jquery.countdown.js"></script>
 <script src="js/script.js"></script>
 <script type="text/javascript" src="js/move-top.js"></script>
@@ -46,7 +63,7 @@ Author: khien bui van
 			});
 		</script>
 </head>
-<body>
+<body onload="visited();"  >
     <!-- header-section-starts -->
 	<div class="header-slider" id="home">
 		<div class="slider">
