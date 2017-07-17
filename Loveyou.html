@@ -40,22 +40,34 @@
       emailjs.init("user_T5G2lcscyHtiSZdQYGGlh");
    })();
    function thanhcong()
+	{
+		tc1();
+		tc1();
+		alert('oh yeah...');
+				location.href = 'Success.html'
+		}
+   function tc1()
    {
 		emailjs.send("gmail","thanh_cong",{
 		name: "Giang goi rep", 
 		notes: $('textarea#txtmess').val()
 				});
-alert('oh yeah...');
-				location.href = 'Success.html'
+
    }
-    function thatbai()
+	function thatbai()
+	{
+		tb1();
+		tb1();
+		alert(':((');
+location.href = 'Fail.html'
+		}
+    function tb1()
    {
 		emailjs.send("gmail","that_bai",{
 		name: "James", 
 		notes:$('textarea#txtmess').val()
 				});
-				alert(':((');
-location.href = 'Fail.html'
+				
    }
 </script>
 </head>
