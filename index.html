@@ -44,10 +44,15 @@
  		name: "Giang visited", 
  		notes: ""
  				});
- 		window.location.href = "Diarys.html"
+				
+				myVar = setInterval(gotoDiary, 5000);
+ 		 
  			    
     }
-    
+    function gotoDiary()
+	{
+		window.location.href = "Diarys.html"
+	}
     </script>
      <script src="js/jquery.countdown.js"></script>
  <script src="js/script.js"></script>
